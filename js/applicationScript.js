@@ -67,7 +67,7 @@ var getPoems = function(){
   client.sendRequest("GET", poems, "", "", {}, false,
   function(data, type) {
     console.log(data); 
-    document.getElementById("p1").innerText = data.map(song => song.title);
+    document.getElementById("p1").innerText = data[0].text; document.getElementById("p1").innerText = data[0].text;
 
   },
   function(error) {
